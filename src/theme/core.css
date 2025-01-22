@@ -1,0 +1,52 @@
+/* core.css */
+
+/* โทนสีหลัก */
+:root {
+  --primary-color: #ff9aa2; /* ชมพูน่ารัก */
+  --secondary-color: #ffc3a0; /* สีพีชนุ่มนวล */
+  --tertiary-color: #ffdac1; /* สีครีมสว่าง */
+  --accent-color: #b5ead7; /* สีเขียวนุ่ม */
+  --text-color: #4a4a4a; /* ตัวอักษรสีเทาเข้ม */
+  --background-color: #ffffff; /* เปลี่ยนเป็นสีขาว */
+  --border-radius: 12px;
+  --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ตั้งค่าพื้นฐาน */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* พื้นหลังเนื้อหา */
+ion-content {
+  padding: 1rem;
+  background: #ffffff; /* สีพื้นหลังสีขาว */
+}
+
+/* รายการ */
+ion-list, .content-box {
+  background-color: #ffffff; /* สีพื้นหลังขาว */
+  box-shadow: none; /* ลบเงาออก */
+}
+
+ion-item {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+ion-item:hover {
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  transform: translateX(5px);
+}
+ion-back-button {
+  color: #fff !important;
+  --color-focused: #fff;
+  --color-hover: #fff;
+}
